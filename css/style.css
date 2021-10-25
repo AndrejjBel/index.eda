@@ -63,6 +63,24 @@ body {
     margin-left: 30px;
     text-decoration: none;
 }
+.swiper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.slider-buttons {
+    display: flex;
+    position: absolute;
+    right: 46px;
+    bottom: 40px;
+    z-index: 9;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+.slider-button {
+    cursor: pointer;
+}
 .shop-counter {
     display: block;
     position: absolute;
@@ -127,6 +145,16 @@ body {
 }
 .slide-summer {
     background-image: url("../img/summer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide-spring {
+    background-image: url("../img/spring.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide-autumn {
+    background-image: url("../img/autumn.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -212,12 +240,13 @@ body {
     right: 0;
     bottom: 0;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .section-title {
     font-weight: 500;
     font-size: 32px;
-    line-height: 23px;
+    line-height: 32px;
     margin-top: 0;
     margin-bottom: 47px;
 }
@@ -315,7 +344,7 @@ body {
 }
 .tabs-card {
     flex: 20%;
-    margin: 20px;
+    margin: 15px;
     width: 270px;
     border-radius: 20px;
     overflow: hidden;
@@ -434,4 +463,122 @@ body {
 .social-linc {
     margin-left: 20px;
     text-decoration: none;
+}
+@media (max-width: 1260px) {
+    .container {
+        max-width: 960px;
+    }
+    .search-form {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .tabs-content {
+        flex-wrap: wrap;
+    }
+    .tabs-card {
+        flex: 50%;
+        max-width: calc(50% - 30px);
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .slide {
+        padding: 70px;
+    }
+    .delivery-card {
+        max-width: calc(50% - 30px);
+        width: 100%;
+    }
+    .footer-logo {
+        margin-right: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .search-form {
+        order: 5;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .promo {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 85%;
+    }
+    .tabs-card {
+        max-width: 100%;
+    }
+    .delivery-week {
+        padding: 10px 0;
+    }
+    .delivery-card {
+        max-width: 100%;        
+    }
+    .tabs {
+        flex-direction: column;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+    }
+    .slide {
+        padding: 50px;
+    }
+    .footer-wrapper {        
+        align-items: flex-start;
+    }
+    .social-lincs {        
+        align-items: flex-start;
+        margin-left: -20px;
+        margin-top: 10px;
+    }
+    .button {
+        padding: 12px 30px;
+    }
+    .button-center {
+        width: 250px;
+    }  
+    .slider-buttons {
+        bottom: 20px;
+    }
+    .slide-content {
+        margin-bottom: 40px;
+    }
+    .footer-link {
+        margin-right: 10px;
+    }
+}
+@media (max-width: 340px) {        
+    .logo {
+        width: 100%;
+    }
+    .auth {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .shop-cart {
+        margin-left: auto;
+    }    
+    .slide-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .slide {
+        padding: 30px;
+    }   
+    .card-delivery {
+        font-size: 15px;
+    } 
 }
